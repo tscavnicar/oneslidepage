@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>onepageslide</title>
+    <link href="app.css" rel="stylesheet" type="text/css">
+</head>
+<body id="touch"> <!--#touch is used to set touch sliding on touch enabled devices-->    
+    <div id="slide1" class="inherit-size">
+        <div id="welcome-wrap">
+            <div class="text-center" id="welcome">
+                BEGIN
+            </div>
+        </div>
+        <div class="text-center">
+            <a class="btn-down" href="#slide2">
+                <img src="~/Content/img/down-white.png" />
+            </a>
+        </div>
+    </div>
+    <div id="slide2" class="inherit-size">
+        <div class="text-center">
+            <!--content goes here-->
+            test
+
+        </div>
+        <div class="text-center">
+            <a class="btn-down" href="#slide3">
+                <img src="~/Content/img/down-white.png" />
+            </a>
+        </div>
+    </div>
+    <div id="slide3" class="inherit-size">
+        <div class="text-center">
+            <!--content goes here-->
+            test
+
+        </div>
+        <div class="text-center">
+            <a class="btn-up" href="#slide1">
+                <img src="~/Content/img/up-dark.png" />
+            </a>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
