@@ -1,0 +1,404 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Exo+2&subset=latin,latin-ext);
+
+html { /*we need to set the page width and height to 100% to get the reference size*/
+    height: 100%;
+    width: 100%;
+}
+
+/*set the body height and width to 100% so child elements can inherit its size*/
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*class that enables panning - touch scrooling - read more here: http://msdn.microsoft.com/en-us/library/ie/hh772726(v=vs.85).aspx */
+.touch-enabled {
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-y: snapInterval(0%, 100%);
+    -ms-scroll-chaining: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+/*this class is used to inherit height and width from the parrent.*/
+.inherit-size {
+    height: 95%;
+    width: inherit;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*style the slides*/
+#slide1 {
+    color: white;
+}
+
+#slide2 {
+    background-image: url('../img/city.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slide3 {
+    background-color: #0f1012;
+}
+
+
+#welcome {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    background-color: #00a174;
+    margin: 0 auto 0 auto;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    -moz-animation: blink-reset 1s ease-in-out;
+    -o-animation: blink-reset 1s ease-in-out;
+    -webkit-animation: blink-reset 1s ease-in-out;
+    animation: blink-reset 1s ease-in-out;
+}
+
+    #welcome:hover {
+        -moz-animation: blink;
+        -o-animation: blink;
+        -webkit-animation: blink;
+        animation: blink 1s ease-in-out;
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+    }
+
+#message {
+    color: #564439;
+    font-weight: bold;
+}
+
+#subscription {
+    color: #808080;
+}
+
+.font-big {
+    font-size: 2rem;
+}
+
+.small-padding {
+    padding: 5%;
+}
+
+.nav-wrap {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #00a174;
+    border-radius: 50%;
+    color: white;
+    margin: 0 auto 0 auto;
+    -moz-animation: blink-reset-small 0.5s ease-in-out;
+    -o-animation: blink-reset-small 0.5s ease-in-out;
+    -webkit-animation: blink-reset-small 0.5s ease-in-out;
+    animation: blink-reset-small 0.5s ease-in-out;
+}
+
+    .nav-wrap:hover {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        -moz-animation: blink-small 1s ease-in-out;
+        -o-animation: blink-small 1s ease-in-out;
+        -webkit-animation: blink-small 1s ease-in-out;
+        animation: blink-small 1s ease-in-out;
+    }
+/***** ANIMATIONS ******/
+
+
+@-moz-keyframes blink {
+    0% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+
+    50% {
+        width: 280px;
+        height: 280px;
+        line-height: 280px;
+    }
+
+    80% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+
+    100% {
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+
+    50% {
+        width: 280px;
+        height: 280px;
+        line-height: 280px;
+    }
+
+    80% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+
+    100% {
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+    }
+}
+
+@keyframes blink {
+    0% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+
+    50% {
+        width: 280px;
+        height: 280px;
+        line-height: 280px;
+    }
+
+    80% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+
+    100% {
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+    }
+}
+
+
+@-moz-keyframes blink-reset {
+    0% {
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+    }
+
+    100% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+}
+
+@-webkit-keyframes blink-reset {
+    0% {
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+    }
+
+    100% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+}
+
+@keyframes blink-reset {
+    0% {
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+    }
+
+    100% {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+}
+
+
+@keyframes blink-reset-small {
+    from {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@-moz-keyframes blink-reset-small {
+    from {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@-webkit-keyframes blink-reset-small {
+    from {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@keyframes blink-small {
+    0% {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    60% {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    100% {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+@-moz-keyframes blink-small {
+    0% {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    60% {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    100% {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+@-webkit-keyframes blink-small {
+    0% {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    60% {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    100% {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+/*  Small screens */
+@media only screen {
+}
+/* Define mobile styles */
+
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+    .vertical-padding {
+        padding: 30% 0 0 0;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {
+}
+/* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .vertical-padding {
+        padding: 15% 0 0 0;
+    }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) {
+    .vertical-padding {
+        padding: 10% 0 0 0;
+    }
+}
+/* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) {
+}
+/* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+}
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) {
+      .vertical-padding {
+        padding: 15% 0 0 0;
+    }
+}
+/* min-width 1921px, xlarge screens */
