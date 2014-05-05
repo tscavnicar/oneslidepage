@@ -18,18 +18,19 @@ a {
     text-decoration: none;
 }
 
-/*class that enables panning - touch scrooling - read more here: http://msdn.microsoft.com/en-us/library/ie/hh772726(v=vs.85).aspx */
+/*class that enables panning - touch scrooling for IE - read more here: http://msdn.microsoft.com/en-us/library/ie/hh772726(v=vs.85).aspx */
 .touch-enabled {
     -ms-scroll-snap-type: mandatory;
     -ms-scroll-snap-points-y: snapInterval(0%, 100%);
     -ms-scroll-chaining: none;
     -ms-touch-action: pan-y;
     touch-action: pan-y;
+    overflow-y: auto;
 }
 
 /*this class is used to inherit height and width from the parrent.*/
 .inherit-size {
-    height: 95%;
+    height: inherit;
     width: inherit;
 }
 
@@ -114,10 +115,10 @@ a {
         width: 55px;
         height: 55px;
         line-height: 55px;
-        -moz-animation: blink-small 1s ease-in-out;
-        -o-animation: blink-small 1s ease-in-out;
-        -webkit-animation: blink-small 1s ease-in-out;
-        animation: blink-small 1s ease-in-out;
+        -moz-animation: blink-small 0.5s ease-in-out;
+        -o-animation: blink-small 0.5s ease-in-out;
+        -webkit-animation: blink-small 0.5s ease-in-out;
+        animation: blink-small 0.5s ease-in-out;
     }
 /***** ANIMATIONS ******/
 
@@ -397,7 +398,7 @@ a {
 
 /* XXLarge screens */
 @media only screen and (min-width: 120.063em) {
-      .vertical-padding {
+    .vertical-padding {
         padding: 15% 0 0 0;
     }
 }
